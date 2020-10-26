@@ -8,7 +8,7 @@
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     text-align: center;
     margin: 0px;
     padding: 0px;
@@ -26,13 +26,7 @@
     Width: 170px;
     Height: 90px;
   }
-  .clients-link:hover,
-  .clients-link:focus {
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
-    color: var(--accent-color);
-    
-  }
+  
   .clients-link {
     display: flex;
     justify-content: center;
@@ -45,6 +39,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    &:hover,
+    &:focus {
+    border: 1px solid $accent-color;
+    border-radius: 4px;
+    color: $accent-color;
+    
+  }
   }
   .clients-icon {
     fill: currentcolor;
